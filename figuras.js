@@ -68,16 +68,67 @@ console.groupEnd();
 document.getElementById("button__content--uno").addEventListener("click", calcularPerimetroCuadrado);
 
 function calcularPerimetroCuadrado(){
-    ladoCuadrado = document.getElementById("InputCuadrado").value;     
-    perimetro = perimetroCuadrado(ladoCuadrado);
+    let ladoCuadrado = document.getElementById("InputCuadrado").value;     
+    let perimetro = perimetroCuadrado(ladoCuadrado); //guardamos el resultado de ejecutar la función perimetroCuadrado
+    //y al mismo tiempo le pasamos el argumento ladoCuadrado recuperado del input a nuestra funcion previa perimetroCuadrado
     alert("El perimetro es igual a: " + perimetro);
 }
 //Calculando el area del cuadrado
 document.getElementById("button__content--dos").addEventListener("click", calcularAreaCuadrado);
 
 function calcularAreaCuadrado(){
-    ladoCuadrado = document.getElementById("InputCuadrado").value;     
-    area = areaCuadrado(ladoCuadrado);
-    alert("El perimetro es igual a: " + area);
+    let ladoCuadrado = document.getElementById("InputCuadrado").value;     
+    let area = areaCuadrado(ladoCuadrado);
+    alert("El área es igual a: " + area);
 }
 
+//Calculando el perimetro del triangulo
+document.getElementById("button__content__dos--uno").addEventListener("click", calcularPerimetroTriangulo);
+function calcularPerimetroTriangulo(){
+    const lado1 = parseInt(document.getElementById("ladoUnoTriangulo").value);  //parseInt
+    const lado2 = parseInt(document.getElementById("ladoDosTriangulo").value);  //parseInt
+    const base = parseInt(document.getElementById("InputBaseTriangulo").value); //parseInt
+    const perimetro =  perimetroTriangulo(lado1,lado2,base);
+    alert("El perimetro es igual a: " + perimetro);
+}/*
+
+Recuerden que todo lo que entra en un formulario es tipo string, el input type=“number” 
+lo que hace es que solamente reciba caracteres tipo número. 
+Pero no significa que lo que entra JS lo tome como Number en las funciones.
+Para ello se debe hacer coerción  */   
+//document.getElementById("ladoDosTriangulo")
+
+//Calculando area del triangulo
+document.getElementById("button__content__dos--dos").addEventListener("click", calcularAreaTriangulo);
+function calcularAreaTriangulo(){
+    const base = parseInt(document.getElementById("InputBaseTriangulo").value); //parseInt
+    const altura = parseInt(document.getElementById("InputAlturaTriangulo").value);
+    const area = areaTriangulo(base,altura);
+    alert("El área es igual a: " + area);
+}
+
+//Calcular la circunferencia de un circulo
+document.getElementById("button__content__tres--uno").addEventListener("click", calcularCircunferencia);
+function calcularCircunferencia(){
+    const radio = parseInt(document.getElementById("InputCirculo").value);
+    const circunferencia = perimetroCirculo(radio);
+    alert("La circunferencia es igual a: " + circunferencia);
+}
+//Calcuñar el area de un circulo
+document.getElementById("button__content__tres--dos").addEventListener("click", calcularAreaCirculo);
+function calcularAreaCirculo(){
+    const radioCirculo = parseInt(document.getElementById("InputCirculo").value);
+    const area = areaCirculo(radioCirculo);
+    alert("El área es igual a: " + area);
+}
+//Calcular altura de un triangulo isisceles
+function calcularAltura(a,b){
+    return Math.sqrt((a*a)-((b*b)/4));
+}
+document.getElementById("button__content__cuatro--uno").addEventListener("click", calcularAlturaIsosceles);
+function calcularAlturaIsosceles(){
+    const lados = parseInt(document.getElementById("ladosIsosceles").value);
+    const base = parseInt(document.getElementById("BaseIsosceles").value);
+    const altura = calcularAltura(lados,base);
+    alert("La altura es igual a: " + altura);
+}
