@@ -65,7 +65,7 @@ function areaCirculo(radioCirculo){
 console.groupEnd();
 
 //Calculando perimetro del cuadrado
-document.getElementById("button__section1--uno").addEventListener("click", calcularPerimetroCuadrado);
+document.getElementById("button__content--uno").addEventListener("click", calcularPerimetroCuadrado);
 
 function calcularPerimetroCuadrado(){
     ladoCuadrado = document.getElementById("InputCuadrado").value;     
@@ -73,7 +73,7 @@ function calcularPerimetroCuadrado(){
     alert("El perimetro es igual a: " + perimetro);
 }
 //Calculando el area del cuadrado
-document.getElementById("button__section1--dos").addEventListener("click", calcularAreaCuadrado);
+document.getElementById("button__content--dos").addEventListener("click", calcularAreaCuadrado);
 
 function calcularAreaCuadrado(){
     ladoCuadrado = document.getElementById("InputCuadrado").value;     

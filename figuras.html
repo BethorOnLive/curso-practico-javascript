@@ -12,22 +12,71 @@
         <h1>Figuras geométricas</h1>
         <p>Este es el primer curso práctico de JavaScript</p>
     </header>
-    <section class="section1">
-        <div class="section1__header">
-            <h3 class="section1__title">Calcula el área y perimetro de un cuadrado</h3>
-            <svg class="section1__image"version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 120 100">
+    <section class="content">
+        <div class="content__header">
+            <h3 class="content__title">Calcula el área y perimetro de un cuadrado</h3>
+            <svg class="content__image"version="1.1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 120 100">
                 <rect x="10" y="10" width="100" height="100" fill="yellow" stroke="black"/>
             </svg>
         </div>
-        <form class="section1__form1">
-            <ul class="section1__list">
-                <li class= "section1__item1">
-                    <label class="section1__label" for="InputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
-                    <input id="InputCuadrado" class="section1__input"type="number">
+        <form class="content__form">
+            <ul class="content__list">
+                <li class= "content__item1">
+                    <label class="content__label" for="InputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+                    <input id="InputCuadrado" class="content__input"type="number"placeholder="lado">
                 </li>
-                <li class= "section1__item2">
-                    <button id="button__section1--uno"class="button button__section1--uno"type="button">Calcula el perímetro</button>     
-                    <button  id="button__section1--dos"class="button button__section1--dos"type="button">Calcula el área</button>
+                <li class= "content__item2">
+                    <button id="button__content--uno"class="button button__content--uno"type="button">Calcula el perímetro</button>     
+                    <button  id="button__content--dos"class="button button__content--dos"type="button">Calcula el área</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+    <section class="content content-dos">
+        <div class="content__header content__header-dos">
+            <h3 class="content__title content__title-dos">Calcula el área y perimetro de un traingulo</h3>
+                <svg height="100" width="100">
+                    <polygon points="50,10 95,95 10,95"
+                    stroke="black" stroke-width=1 fill="yellow"/> 
+                </svg> 
+        </div>
+        <form class="content__form content__form-dos">
+            <ul class="content__list content__list-dos">
+                <li class="content__item1 content__item1-dos">
+                    <label class="content__label content__label-dos" for="ladoUnoTriangulo">Escribe cuanto mide el lado 1 y 2 del triangulo</label>
+                    <input id="ladoUnoTriangulo" class="content__input"type="number" placeholder="lado 1">
+                    <label class="content__label content__label-dos" for="ladoDosTriangulo"></label>
+                    <input id="ladoDosTriangulo" class="content__input"type="number" placeholder="lado 2">
+                </li>
+                <li class= "content__item2 content__item2-dos">
+                    <label class="content__label content__label-dos" for="InputBaseTriangulo">Escribe cuanto mide la base del triangulo</label>
+                    <input id="InputBaseTriangulo" class="content__input"type="number" placeholder="base">
+                    <label class="content__label content__label-dos" for="InputAlturaTriangulo">Escribe cuanto mide la altura</label>
+                    <input id="InputAlturaTriangulo" class="content__input"type="number" placeholder="altura">
+                </li>
+                <li class= "content__item3 content__item3-dos">
+                    <button id="button__content--uno"class="button button__content--uno"type="button">Calcula el perímetro</button>     
+                    <button  id="button__content--dos"class="button button__content--dos"type="button">Calcula el área</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+    <section class="content content-tres">
+        <div class="content__header content__header-tres">
+            <h3 class="content__title content__title-tres">Calcula el área y circunferencia de un circulo</h3>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"width="120" height="120" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="50" fill="yellow" stroke="black"/>
+            </svg>
+        </div>
+        <form class="content__form content__form-tres">
+            <ul class="content__list content__list-tres">
+                <li class="content__item1 content__item1-tres">
+                    <label class="content__label content__label-tres" for="InputCirculo">Escribe cuanto mide el radio</label>
+                    <input id="InputCirculo" class="content__input"type="number"placeholder="radio">
+                </li>
+                <li class= "content__item2 content__item2-tres">
+                    <button id="button__content--uno"class="button button__content--uno"type="button">Calcula la circunferencia</button>     
+                    <button  id="button__content--dos"class="button button__content--dos"type="button">Calcula el área</button>
                 </li>
             </ul>
         </form>

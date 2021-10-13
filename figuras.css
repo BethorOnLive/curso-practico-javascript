@@ -5,62 +5,96 @@
 }
 body{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-image: url(/imgs/figuras.jpg);
     background-size: 100%;
 }
 .header{
-    width: 900px;
+    width: 80%;
     border: solid 1px grey;
-    background-color: hsl(48, 100%, 93%,.6);
-    padding: 10px 0;
-    margin: 10px 0;
+    background-color: hsl(48, 100%, 93%,.3);
+    color: #0FFFD1;
+    padding: 10px;
+    margin: 10px auto;
     border-radius: 10px;
     text-align: center;
 }
-.section1{
+.content{
     width: 350px;
-    height: 300px;
+    height: 320px;
     border: solid 1px black;
-    background-color: hsl(48, 100%, 93%,.6);
+    background-color: hsl(48, 100%, 93%,.4);
+    color: white;
     border-radius: 10px;
     margin-top: 50px;
+    box-sizing: border-box;
+    box-shadow: 1px 3px yellow;
 }
-.section1__header{
+.content-dos{
+    height: 410px;
+}
+.content__header{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 10px;
 }
-.section1__list{
+.content__title{
+    text-align: center;
+}
+.content__list{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.section1__item1, .section1__item2{
-    margin: 20px 0;
-}
-.section1__item1{
+.content__item1{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;   
+    align-items: center;
+    margin-top: 20px 0;   
 }
-.section1__item2{
+.content__item2{
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
-
-.section1__label{
+.content__item2-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content__item3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.content__label{
     width: 300px;
+    display: block;
 }
-.section1__input{
+.content__input{
     width: 200px;
+    border-block-end: #0FFFD1 solid 2px;
+    background-color: transparent;
+    border-radius: 20px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    outline: none;
+    height: 30px;
+    color: white;
+    text-align: center;
 }
+.content__input::placeholder { color: yellow; font-weight: bold; }
 .button{
     border-radius: 10px;
     width: 150px;
     height: 30px;
-    background-color: white;
+    background-color: #454546;
+    color: white;
+    border-block-end: #dcdcdc;
+    box-shadow: .5px 1.5px #dcdcdc;
 }
