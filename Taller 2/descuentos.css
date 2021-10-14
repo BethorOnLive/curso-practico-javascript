@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    background-size: 100%;
+}
+.header{
+    width: 80%;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.content{
+    width: 360px;
+    height: 330px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    margin: 50px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.content__title{
+    text-align: center;
+}
+figure{
+    text-align: center;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+.content__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.content__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px 0;  
+    text-align: center; 
+    color: white;
+}
+.item-dos--parrafo{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: solid 1px #33176f;
+    border-radius: 10px;
+    color: #0FFFD1;
+    font-size: 40px;
+}
+.content__label{
+    width: 300px;
+    display: block;
+}
+.content__input{
+    width: 200px;
+    border-block-end: #0FFFD1 solid 2px;
+    background-color: transparent;
+    border-radius: 20px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    outline: none;
+    height: 30px;
+    color: white;
+    text-align: center;
+}
+.content__input::placeholder { color: yellow; font-weight: bold;}
+.button{
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #454546;
+    color: white;
+    border-block-end: #dcdcdc;
+    box-shadow: .5px 1.5px #dcdcdc;
+}
+.button__content__cuatro--uno{
+    width: 200px;
+    margin: 10px 0;
+}
+.button:hover{
+    border-color: yellow;
+    color: yellow;
+}
