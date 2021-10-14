@@ -25,6 +25,7 @@ body{
     height: 320px;
     border: solid 1px black;
     background-color: hsl(48, 100%, 93%,.4);
+    backdrop-filter: blur( 2px );
     color: white;
     border-radius: 10px;
     margin: 50px 0;
