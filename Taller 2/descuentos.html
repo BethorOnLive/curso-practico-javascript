@@ -15,8 +15,8 @@
     <section class="content">
         <div class="content__header">
             <h3 class="content__title">Calcula el precio a pagar de tus productos</h3>
-            <figure>
-                <img src="/Taller 2/svg/shopping.svg">
+            <figure class="content__figure">
+                <img src="/Taller 2/svg/shopping.svg" alt="imagen de una bolsa de compra">
             </figure>
         </div>
         <form class="content__form">
@@ -30,6 +30,32 @@
                 <li class= "content__item item-dos">
                     <span>El precio final es:</span>
                     <p id="resultado" class="item-dos--parrafo"></p>    
+                </li>
+            </ul>
+        </form>
+    </section>
+    <section class="content content-dos">
+        <div class="content__header content__header-dos">
+            <h3 class="content__title content__title-dos">Calcula el precio a pagar de 
+                tus productos ingresando tu cupón de descuento</h3>
+            <figure class="content__figure">
+                <img src="/Taller 2/svg/redeem.svg" alt="Imagen de un cupon">
+            </figure>
+        </div>
+        <form class="content__form content__form-dos">
+            <ul class="content__list content__list-dos">
+                <li class= "content__item content__item-dos item-uno">
+                    <label class="content__label content__label-dos" for="InputPrecioNormal">Ingresa el precio de tu producto</label>
+                    <input id="InputPrecioNormal" class="content__input"type="number"placeholder="$">
+                    <label class="content__label content__label-dos" for="InputCupon">Ingresa el codigo de tu cupón</label>
+                    <input id="InputCupon" class="content__input"type="text"placeholder="código">
+                </li>
+                <li class= "content__item  content__item-dos item-dos">
+                    <span>El precio final es:</span>
+                    <p id="resultado-cupon" class="item-dos--parrafo"></p>    
+                </li>
+                <li class= "content__item  content__item-dos item-tres">
+                   <button id="BotonAplicar" class="button button__content--uno" type="button">Aplicar cupón</button>
                 </li>
             </ul>
         </form>
