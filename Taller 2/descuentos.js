@@ -4,6 +4,7 @@ function descuentos(precioFull,porcentajeDesc){
     const precioConDescuento = precioFull - ((porcentajeDesc * precioFull)/100);
     return precioConDescuento;
 }
+//Calculadora uno
 document.getElementById("InputPrecioFull").addEventListener("input", calcularDescuento);
 document.getElementById("InputDescuento").addEventListener("input", calcularDescuento);
 function calcularDescuento(){
@@ -13,7 +14,7 @@ function calcularDescuento(){
     const imprimeResultado = document.getElementById("resultado");
     imprimeResultado.innerText = "$" + precioFinal; 
 }
-//Calcular descuentos de cupones
+//Calculadora dos
 const cupones = [   //Creando array de objetos con atributos y valores en el mismo sitio
     {codigo: "LOG95", descuento: 20},
     {codigo: "LOG96", descuento: 30},

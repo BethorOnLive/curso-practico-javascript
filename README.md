@@ -15,3 +15,9 @@
 - Segundo paso: implementar formulas en javascript
 - Tercer paso: crear funciones 
 - Integrar JS con HTML
+
+## Taller #3: Calcular promedio/media aritmetica, mediana y moda
+
+- Primer paso: definir las formulas
+- Segundo paso: implementar formulas en javascript
+- Tercer paso: crear funciones 
