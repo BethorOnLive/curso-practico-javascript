@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-image: url(/imgs/figuras.jpg);
+    background-image: url(/Taller1/imgs/figuras.jpg);
     background-size: 100%;
 }
 .header{
