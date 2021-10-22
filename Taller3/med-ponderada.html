@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Taller3/med-ponderada.css" type="text/css">
+    <title>Media ponderada | Calificacion final</title>
+</head>
+<body>
+    <section class="content">
+        <div class="content__header">
+            <h3 class="content__title">Calcula la calificacion final del alumno</h3>
+            <figure class="content__figure">
+                <img src="/Taller1/imgs/school.svg" alt="Imagen de una escuadra para medir">
+            </figure>
+            <h4>Examen : 70% | Proyecto : 20% | Tareas : 10%</h4>
+        </div>
+        <form class="content__form">
+            <ul class="content__list">
+                <li class= "content__item item-uno">
+                    <label class="content__label" for="InputTarea">Calificacion obtenida en tareas</label>
+                    <input id="InputTarea" class="content__input"type="number"placeholder="1-10">
+                    <label class="content__label" for="InputProyecto">Calificacion obtenida en proyecto</label>
+                    <input id="InputProyecto" class="content__input"type="number"placeholder="1-10">
+                    <label class="content__label" for="InputExamen">Calificacion obtenida en el examen</label>
+                    <input id="InputExamen" class="content__input"type="number"placeholder="1-10">
+                </li>
+                <li class= "content__item item-dos">
+                    <span>Calificacion final:</span>
+                    <p id="resultado" class="item-dos--parrafo"></p>    
+                </li>
+            </ul>
+        </form>
+        <script src="/Taller3/med-ponderada.js"></script>
+    </section>
+</body>
+</html>
